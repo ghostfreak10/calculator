@@ -13,14 +13,24 @@ int main()
     void Tan(float);
     void Log(float);
     void Baselog(float);
+    void Arthematic(int);
+    void trigno(int);
+    void aSine(float);
+    void aCos(float);
+    void aTan(float);
     cout << "WHAT YOU WANT TO FIND: " << endl;
     cout << "Press '1' for Power: " << endl;
     cout << "Press '2' for Sin: " << endl;
-    cout << "Press '3' for Square: " << endl;
+    cout << "Press '3' for Square Root: " << endl;
     cout << "Press '4' for Cos: " << endl;
     cout << "Press '5' for Tan: " << endl;
     cout << "Press '6' for Log: " << endl;
     cout << "Press '7' for Base Log: " << endl;
+    cout << "Press '8' for Arthmetic Operation: " << endl;
+    cout << "Press '9' for Sin Inverse: " << endl;
+    cout << "Press '10' for Cos Inverse: " << endl;
+    cout << "Press '11 for Tan Inverse: " << endl;
+    
 
     cin >> z;
     switch (z)
@@ -40,7 +50,7 @@ int main()
         break;
 
     case 3:
-        cout << "Enter the Number for Calculating Square: " << endl;
+        cout << "Enter the Number for Calculating Square Root: " << endl;
         cin >> a;
         Square(a);
         break;
@@ -68,6 +78,27 @@ int main()
         cin >> a;
         Baselog(a);
         break;
+    case 8:
+        int x;
+        cout<<"Enter the Arthematic Operation you want to perform "<<endl<<"1.Addition"<<endl<<"2.Subtraction"<<endl<<"3.Multiplication"<<endl<<"4.Division"<<endl<<"5.Mudulus"<<endl;
+        cin>>x;
+        Arthematic(x);
+        break;
+    case 9:
+        cout << "Enter the Number for Calculating Sin Inverse: " << endl;
+        cin >> a;
+        aSine(a);
+        break;
+    case 10:
+        cout << "Enter the Number for Calculating Cos Inverse: " << endl;
+        cin >> a;
+        aCos(a);
+        break;
+    case 11:
+        cout << "Enter the Number for Calculating Tan Inverse: " << endl;
+        cin >> a;
+        aTan(a);
+        break;
     }
     return 0;
 }
@@ -90,7 +121,7 @@ void Square(float x)
 {
     float sq;
     sq = sqrt(x);
-    cout << "Square of a Given Value is: " << sq;
+    cout << "Square Root of a Given Number is: " << sq;
 }
 
 void Cos(float x)
@@ -119,4 +150,64 @@ void Baselog(float x)
     float bl;
     bl = log10(x);
     cout << "LOG with Base 10: " << bl;
+}
+
+void aSine(float x)
+{
+    float s;
+    s = asin(x);
+    cout << "Sin Inverse: " << s;
+}
+
+void aCos(float x)
+{
+    float c;
+    c = cos(x);
+    cout << "Cos Inverse: " << c;
+}
+
+
+void aTan(float x)
+{
+    float t;
+    t = atan(x);
+    cout << "Tan Inverse: " << t;
+}
+
+
+
+void Arthematic(int x){
+    if(x==1){
+        int a,b;
+        cout<<"Enter two numbers for addition "<<endl;
+        cin>>a>>b;
+        cout<<"The Addition of "<<a<<" and "<<b<<" is "<<a+b;
+    }
+    else if(x==2){
+        int a,b;
+        cout<<"Enter two numbers for Subtraction "<<endl;
+        cin>>a>>b;
+        cout<<"The Subtraction of "<<a<<" and "<<b<<" is "<<a-b;
+    }
+    else if(x==3){
+        int a,b;
+        cout<<"Enter two numbers for Multiplication "<<endl;
+        cin>>a>>b;
+        cout<<"The Multiplication of "<<a<<" and "<<b<<" is "<<a*b;
+    }
+    else if(x==4){
+        int a,b;
+        cout<<"Enter two numbers for Division"<<endl;
+        cin>>a>>b;
+        cout<<"The Division of "<<a<<" and "<<b<<" is "<<a/b;
+    }
+    else if(x==5){
+        int a,b;
+        cout<<"Enter two numbers for Modulus"<<endl;
+        cin>>a>>b;
+        cout<<"The Modulus of "<<a<<" and "<<b<<" is "<<a%b;
+    }
+    else{
+        cout<<"You have entered wrong input.Try again!"<<endl;
+    }
 }
