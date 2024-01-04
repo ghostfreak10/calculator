@@ -155,14 +155,14 @@ void Baselog(float x)
 void aSine(float x)
 {
     float s;
-    s = asin(x);
+    s = asin(x*3.14159/180);
     cout << "Sin Inverse: " << s;
 }
 
 void aCos(float x)
 {
     float c;
-    c = cos(x);
+    c = acos(x*3.14159/180);
     cout << "Cos Inverse: " << c;
 }
 
