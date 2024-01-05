@@ -99,6 +99,8 @@ int main()
         cin >> a;
         aTan(a);
         break;
+    default:
+        cout<<"You have entered wrong input"<<endl;
     }
     return 0;
 }
