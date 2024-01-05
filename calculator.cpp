@@ -13,7 +13,7 @@ int main()
     void Tan(float);
     void Log(float);
     void Baselog(float);
-    void Arthematic(int);
+    void Arithematic(int);
     void trigno(int);
     void aSine(float);
     void aCos(float);
@@ -26,10 +26,10 @@ int main()
     cout << "Press '5' for Tan: " << endl;
     cout << "Press '6' for Log: " << endl;
     cout << "Press '7' for Base Log: " << endl;
-    cout << "Press '8' for Arthmetic Operation: " << endl;
+    cout << "Press '8' for Arithmetic Operation: " << endl;
     cout << "Press '9' for Sin Inverse: " << endl;
     cout << "Press '10' for Cos Inverse: " << endl;
-    cout << "Press '11 for Tan Inverse: " << endl;
+    cout << "Press '11' for Tan Inverse: " << endl;
     
 
     cin >> z;
@@ -80,7 +80,7 @@ int main()
         break;
     case 8:
         int x;
-        cout<<"Enter the Arthematic Operation you want to perform "<<endl<<"1.Addition"<<endl<<"2.Subtraction"<<endl<<"3.Multiplication"<<endl<<"4.Division"<<endl<<"5.Mudulus"<<endl;
+        cout<<"Enter the Arithematic Operation you want to perform "<<endl<<"1.Addition"<<endl<<"2.Subtraction"<<endl<<"3.Multiplication"<<endl<<"4.Division"<<endl<<"5.Mudulus"<<endl;
         cin>>x;
         Arthematic(x);
         break;
