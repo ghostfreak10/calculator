@@ -178,7 +178,7 @@ void aTan(float x)
 
 
 
-void Arithematic(int x){
+void Arthematic(int x){
     if(x==1){
         int a,b;
         cout<<"Enter two numbers for addition "<<endl;
